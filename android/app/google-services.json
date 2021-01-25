@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "121966839025",
+    "project_id": "euclid-90f08",
+    "storage_bucket": "euclid-90f08.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:121966839025:android:894d1271c3536d2c0dd550",
+        "android_client_info": {
+          "package_name": "com.example.euclid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "121966839025-8kcsgmeqhf3f4shguudfuh8o49spej92.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKJESy6gc97gzGWltsoHsUS1Ps5-XkDEU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "121966839025-8kcsgmeqhf3f4shguudfuh8o49spej92.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
