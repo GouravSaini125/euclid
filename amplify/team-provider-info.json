@@ -1,0 +1,15 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-euclid-dev-120305-authRole",
+            "UnauthRoleArn": "arn:aws:iam::041122839662:role/amplify-euclid-dev-120305-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::041122839662:role/amplify-euclid-dev-120305-authRole",
+            "Region": "ap-south-1",
+            "DeploymentBucketName": "amplify-euclid-dev-120305-deployment",
+            "UnauthRoleName": "amplify-euclid-dev-120305-unauthRole",
+            "StackName": "amplify-euclid-dev-120305",
+            "StackId": "arn:aws:cloudformation:ap-south-1:041122839662:stack/amplify-euclid-dev-120305/363821c0-5ed7-11eb-a6ca-02d01bf152ec",
+            "AmplifyAppId": "d2aaq7kl91wbhv"
+        }
+    }
+}

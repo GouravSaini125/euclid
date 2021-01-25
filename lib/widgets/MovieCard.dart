@@ -1,4 +1,4 @@
-import 'package:euclid/mocks/movies.dart';
+import 'package:euclid/models/movies.dart';
 import 'package:flutter/material.dart';
 
 class MovieCard extends StatelessWidget {
@@ -18,7 +18,7 @@ class MovieCard extends StatelessWidget {
           ),
           margin: EdgeInsets.only(
             top: MediaQuery.of(context).size.height / 2.2 / 2,
-            bottom: 50.0,
+            bottom: 30.0,
           ),
           child: Column(
             children: [
@@ -40,7 +40,7 @@ class MovieCard extends StatelessWidget {
                 children: getTags(),
               ),
               SizedBox(
-                height: 30.0,
+                height: 20.0,
               ),
               Row(
                 children: [
@@ -48,7 +48,7 @@ class MovieCard extends StatelessWidget {
                     children: [
                       Container(
                         height: 30.0,
-                        width: 100.0,
+                        width: 90.0,
                         child: Center(
                           child: Text(
                             "Director",
@@ -57,7 +57,7 @@ class MovieCard extends StatelessWidget {
                       ),
                       Container(
                         height: 30.0,
-                        width: 100.0,
+                        width: 90.0,
                         child: Center(
                           child: Text(
                             "Writers",
@@ -66,7 +66,7 @@ class MovieCard extends StatelessWidget {
                       ),
                       Container(
                         height: 30.0,
-                        width: 100.0,
+                        width: 90.0,
                         child: Center(
                           child: Text(
                             "Stars",
@@ -90,6 +90,7 @@ class MovieCard extends StatelessWidget {
                         child: Center(
                           child: Text(
                             movie.writers.join(", "),
+                            overflow: TextOverflow.ellipsis,
                           ),
                         ),
                       ),
@@ -98,6 +99,7 @@ class MovieCard extends StatelessWidget {
                         child: Center(
                           child: Text(
                             movie.stars.join(", "),
+                            overflow: TextOverflow.ellipsis,
                           ),
                         ),
                       ),
@@ -106,7 +108,7 @@ class MovieCard extends StatelessWidget {
                 ],
               ),
               SizedBox(
-                height: 30.0,
+                height: 20.0,
               ),
               Text(
                 "Release Date : ${movie.release}",

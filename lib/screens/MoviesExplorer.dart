@@ -1,7 +1,8 @@
 import 'dart:ui';
 
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:euclid/mocks/movies.dart';
+import 'package:euclid/configs/AmplifyService.dart';
+import 'package:euclid/models/movies.dart';
 import 'package:euclid/widgets/MovieCard.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -46,7 +47,7 @@ class _MoviesExplorerState extends State<MoviesExplorer> {
                 elevation: 0,
               ),
               FutureBuilder(
-                  future: Movie.fetchMovies(),
+                  future: AmplifyService.fetchMovies(),
                   builder: (context, AsyncSnapshot<List<Movie>> snapshot) {
                     if (snapshot.hasData) {
                       return Expanded(
@@ -67,6 +68,7 @@ class _MoviesExplorerState extends State<MoviesExplorer> {
                         ),
                       );
                     } else if (snapshot.hasError) {
+                      print(snapshot.error);
                       return Center(
                         child: Text("Error"),
                       );

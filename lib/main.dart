@@ -1,3 +1,4 @@
+import 'package:euclid/configs/AmplifyService.dart';
 import 'package:euclid/screens/Login.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -15,8 +16,9 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
+      debugShowCheckedModeBanner: false,
       home: FutureBuilder(
-          future: Firebase.initializeApp(),
+          future: init(),
           builder: (context, snapshot) {
             if (snapshot.hasData)
               return LoginScreen();
@@ -26,5 +28,10 @@ class MyApp extends StatelessWidget {
               );
           }),
     );
+  }
+
+  Future<dynamic> init() async {
+    AmplifyService.configureAmplify();
+    return await Firebase.initializeApp();
   }
 }

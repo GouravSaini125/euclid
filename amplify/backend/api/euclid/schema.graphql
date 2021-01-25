@@ -1,0 +1,10 @@
+type Movie @model {
+  id: ID!
+  title: String!
+  image: String!
+  release: String!
+  tags: [String!]!
+  writers: [String!]!
+  stars: [String!]!
+  director: String!
+}
